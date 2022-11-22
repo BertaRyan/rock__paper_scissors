@@ -18,41 +18,50 @@ function computerSelection() {
     }
 }
 
-
-    if ( player1 === rock && computerChoice === scissors) {
-        console.log("You Win! Rock beats Scissors!");
-    }  if(player1 === paper , computerChoice === rock) {
-        console.log('You Win! Paper beats Rock!');
-    }  if(player1 === scissors , computerChoice === paper) {
-        console.log('You Win! Scissors Beats Paper');
-    }  if(computerChoice === rock , player1 === scissors) {
-        console.log("You Lose! Rock beats Scissors! Better Luck Next Time");
-    }  if(computerChoice === paper , player1 === rock) {
-        console.log('You Lose! Paper beats Rock! Better Luck Next Time');
-    } if(computerChoice === scissors , player1 === paper) {
-        console.log('You Lose! Scissors Beats Paper Better Luck Next Time');
+  
+function playRound(player, computer) {
+    winner = 
+    if(player === computer){
+    console.log(`You both picked ${player}. So it's a Tie.`)
     } 
-     if(player1 === computerChoice){
-        console.log('STAAALLLLEEEE-MMAAAATTTEEE')
+    if(player === rock){
+    if(computer===scissors){
+        console.log("You win! Rock smashes Scissors")
+        }
     }
-
-
-function game(){
-    playRound(player1, computerChoice);
-    for(let i=0;i<5;i++){
-
+    if(player===paper){
+    if(computer===rock){
+        console.log('You win! Paper covers rock!')
+        }else{
+            console.log('Computer wins.')
+        }
+    }
+    if(player===scissors){
+    if(computer===paper){
+        console.log('You win! Scissors cuts paper!')
+        }
+        else{
+            console.log('Computer wins.')
+        }
     }
 }
+const player = prompt('Pick Rock-Paper-Scissors to play!').toLowerCase();
+const computer = computerSelection();
+console.log(player)
+console.log(playRound(player,computer));
 
-game()
 
 
-const player1 = prompt("Pick Rock-Paper-Scissors".toLowerCase());
-const computerChoice = computerSelection();
 
-console.log(player1)
 
-playRound()
+
+
+
+
+
+
+
+
 
 
 
