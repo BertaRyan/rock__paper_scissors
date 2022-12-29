@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align:center;
+}
+
+.scores{
+    display:flex;
+    gap:40px;
+    justify-content:center;
+    margin-top:80px;
+    margin-bottom:80px;
+}
+
+.container{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.rock{
+    
+}
+
+
+.container button {
+    padding: 50px;
+}
