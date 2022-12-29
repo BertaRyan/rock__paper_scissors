@@ -1,3 +1,18 @@
+/* 
+
+font-family: 'Dancing Script', cursive;
+cursive ^
+
+font-family: 'Dancing Script', cursive;
+
+
+
+FONTS    ^*/
+
+
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +20,26 @@
 }
 
 body {
-    background-color: bisque;
+    background-color: rgb(169, 222, 239);
+}
+
+.container-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 25px;
+    left: 400px;
+    width: 60%;
+    border: 15px groove rgb(255, 255, 255);
+    border-radius: 15%;
+    padding: 2%;
+}
+
+.game-title {
+    border: 20px double rgb(250, 252, 252);
+    padding: 30px 80px;
+    border-radius: 20%;
 }
 
 h1 {
@@ -16,11 +50,15 @@ h1 {
     display: flex;
     gap: 40px;
     justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
 .instructions {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
     margin-bottom: 50px;
     text-align: center;
     text-decoration: underline;
@@ -33,7 +71,7 @@ h1 {
 }
 
 button img {
-    width: 40%;
+    width: 50%;
     height: 100px;
 }
 
@@ -44,16 +82,28 @@ button img {
 
 
 .container button {
-    width: 15%;
+    width: 30%;
     padding: 15px;
 }
 
 .reset {
-    margin-left: 1300px;
-    margin-top: 60px;
+    margin-bottom: 15px;
+    margin-top: 40px;
     padding: 1% 2%;
 }
 
 .outcome {
     text-align: center;
+}
+
+.player-won {
+    color: green;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+
+.comp-won {
+    color: red;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
 }

@@ -6,28 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock | Paper | Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Rock Paper Scissors</h1>
 
-    <div class="scores">
-        <h1>Player:<span class="playerScore">0</span></h1>
-        <h1>computer:<span class="computerScore">0</span></h1>
+    <div class="container-all">
+        <h1 class="game-title">Rock Paper Scissors</h1>
+
+        <div class="scores">
+            <h1>Player:<span class="playerScore">0</span></h1>
+            <h1>computer:<span class="computerScore">0</span></h1>
+        </div>
+
+        <h2 class="instructions">Pick rock, paper, or scissors to Start the game</h2>
+
+        <div class="container">
+            <button class="rock"><img src="imgs/rock.png" alt=""></button>
+            <button class="paper"><img src="imgs/paper.png" alt=""></button>
+            <button class="scissors"><img src="imgs/scissors.png" alt=""></button>
+        </div>
+
+        <button class="reset" type="reset">Reset</button>
+
+        <div class="outcome"></div>
     </div>
-
-    <h2 class="instructions">Pick rock, paper, or scissors to Start the game</h2>
-
-    <div class="container">
-        <button class="rock"><img src="imgs/rock.png" alt=""></button>
-        <button class="paper"><img src="imgs/paper.png" alt=""></button>
-        <button class="scissors"><img src="imgs/scissors.png" alt=""></button>
-    </div>
-
-    <button class="reset" type="reset">Reset</button>
-
-    <div class="outcome"></div>
 
     <script src="script.js"></script>
 </body>

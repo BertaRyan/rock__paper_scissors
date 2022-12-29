@@ -1,5 +1,7 @@
 let playerScore = 0
 let computerScore = 0
+let winningScore = 3
+let gameOver = false
 
 
 let playerScoreSpan = document.querySelector('.playerScore');
@@ -87,26 +89,47 @@ const playRound = (playerSelection, computerSelection) => {
 }
 
 function checkForWinner(playerScore,computerScore){
-    if(playerScore === 5) {
+    if(playerScore === winningScore) {
     const h2 = document.createElement('h2');
     h2.classList.add('player-won')
+    
     h2.innerText='Good job! You are the victor';
     outcome.append(h2);
+    gameOver = true;
+    rockbtn.disabled = true
+    paperbtn.disabled = true 
+    scissorsbtn.disabled = true
+    reset()
 
-    } else if(computerScore === 5) {
+    } else if(computerScore === winningScore) {
         const h2 = document.createElement('h2');
         h2.classList.add('comp-won')
+       
         h2.innerText='You lost this time. Keep practicing'
+        gameOver = true;
         outcome.append(h2);
+        rockbtn.disabled = true
+        paperbtn.disabled = true
+        scissorsbtn.disabled = true
+        reset()
     }
 }
+
+ 
 
 const resetButton = document.querySelector('.reset');
 
 resetButton.addEventListener('click', (e) =>{
-   playerScore.innerText =0;
-   computerScore.innerText = 0;
-   outcome.reset();
+   playerScoreSpan.innerText = 0;
+   computerScoreSpan.innerText = 0;
+   playerScore = 0;
+   computerScore = 0;
+   outcome.innerText = "";
+   gameOver = false;
+   rockbtn.disabled = false;
+   paperbtn.disabled = false;
+   scissorsbtn.disabled = false;
+   reset();
 
 })
 
