@@ -4,29 +4,56 @@
     padding: 0;
 }
 
-h1{
-    text-align:center;
+body {
+    background-color: bisque;
 }
 
-.scores{
-    display:flex;
-    gap:40px;
-    justify-content:center;
-    margin-top:80px;
-    margin-bottom:80px;
+h1 {
+    text-align: center;
 }
 
-.container{
-    display:flex;
-    justify-content:space-evenly;
-    align-items:center;
+.scores {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
-.rock{
-    
+.instructions {
+    margin-bottom: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button img {
+    width: 40%;
+    height: 100px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 60%;
 }
 
 
 .container button {
-    padding: 50px;
+    width: 15%;
+    padding: 15px;
+}
+
+.reset {
+    margin-left: 1300px;
+    margin-top: 60px;
+    padding: 1% 2%;
+}
+
+.outcome {
+    text-align: center;
 }

@@ -101,6 +101,15 @@ function checkForWinner(playerScore,computerScore){
     }
 }
 
+const resetButton = document.querySelector('.reset');
+
+resetButton.addEventListener('click', (e) =>{
+   playerScore.innerText =0;
+   computerScore.innerText = 0;
+   outcome.reset();
+
+})
+
 // const game = () => {
    
 //     for (let i = 1; i < 5; i++) {
